@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport"
+         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Reddit Search App</title>
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-primary mb-3">
+   <div class="container">
+      <span class="navbar-brand">Reddit Search App</span>
+   </div>
+</nav>
+<div class="container" id="search-container">
+   <div id="search" class="card card-body bg-light mb-2">
+      <h4>Search</h4>
+      <form id="search-form">
+         <div class="form-group">
+            <input type="text" id="search-input" class="form-control mb-3" placeholder="Search Term...">
+         </div>
+         <div class="form-check form-check-inline">
+            Sort By:
+            <input type="radio" class="form-check-input ml-2" name="sortby" value="relevance" checked>
+            <label class="form-check-label">Relevance</label>
+         </div>
+         <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input ml-2" name="sortby" value="new" checked>
+            <label class="form-check-label">Latest</label>
+         </div>
+         <h5 class="mt-2">Limit: </h5>
+         <div class="form-group">
+            <select name="limit" id="limit" class="form-control">
+               <option value="5">5</option>
+               <option value="10">10</option>
+               <option value="25">25</option>
+               <option value="50">50</option>
+               <option value="100">100</option>
+            </select>
+         </div>
+         <button type="submit" class="btn btn-dark btn-block mt-4">Search</button>
+      </form>
+   </div>
+   <div id="results">
+       <!--Sample card-->
+         <div class="card">
+            <img class="card-img-top" src="#" alt="Card image cap">
+            <div class="card-body">
+               <h5 class="card-title">This is a title</h5>
+               <p class="card-text">This is a paragraph</p>
+               <a href="#" target="_blank" class="btn btn-primary btn-sm">Read More</a>
+               <hr>
+               <span class="badge badge-secondary p-2">Subreddit: 1</span>
+               <span class="badge badge-success p-2">Score: 1</span>
+            </div>
+         </div>
+         <!--Sample Card end-->
+   </div>
+</div>
+
+</body>
+</html>
